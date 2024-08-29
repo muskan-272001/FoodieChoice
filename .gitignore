@@ -1,0 +1,14 @@
+ECHO is on.
+# Ignore node_modules in both backend and frontend folders
+backend/node_modules/
+frontend/node_modules/
+
+# Optionally, also ignore other common files and folders
+*.log
+.DS_Store
+.env
+*.env
+.idea/
+.vscode/
+dist/
+build/
