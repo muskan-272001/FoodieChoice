@@ -19,7 +19,7 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         "http://localhost:4000/api/v1/reservation/send",
-        { firstName, lastName, email, phone, time },
+        { firstName, lastName, email, phone, date, time },
         {
           headers: {
             "Content-Type": "application/json",
@@ -93,12 +93,12 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-                <button type="submit" onClick={handleReservation}>
-                  RESERVE NOW{" "}
-                  <span>
-                    <HiOutlineArrowNarrowRight />
-                  </span>
-                </button>
+              <button type="submit" onClick={handleReservation}>
+                RESERVE NOW{" "}
+                <span>
+                  <HiOutlineArrowNarrowRight />
+                </span>
+              </button>
             </form>
           </div>
         </div>
